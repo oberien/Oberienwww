@@ -22,7 +22,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li style="cursor:pointer" class="dropdown" ng:class="{active: site.indexOf('wiki')>-1}">
-          <a class="dropdown-toggle" data-toggle="dropdown" style="padding-left:29px;padding-right:30px">WIKI <span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" style="padding-left:29px;padding-right:30px" ng:click="changeSite('wiki')">WIKI <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li style="cursor:pointer" ng:class="{active: site=='wiki-units'}" ng:click="changeSite('wiki-units')"><a>UNITS</a></li>
             <li style="cursor:pointer" ng:class="{active: site=='wiki-map-tiles'}" ng:click="changeSite('wiki-map-tiles')"><a>MAP TILES</a></li>
