@@ -1,9 +1,16 @@
 <div class="row">
-  <div ng:include="'views/partial/navigation.html'" ng:controller="NavigationCtrl"></div>
+  <div ng:include="'views/partial/navigation.html'"></div>
 </div>
 <div class="row" style="padding-top:50px"></div>
-<div class="row">
-	<div ng:include="'views/home.html'" ng:controller="HomeCtrl"></div>
+<div class="animate-switch-container">
+  <div ng:switch on="site">
+    <div class="animate-switch" ng:switch-when="home">
+        <div ng:include="'views/home.html'" ng:controller="HomeCtrl"></div>
+    </div>
+    <div class="animate-switch" ng:switch-when="about-game">
+        <div ng:include="'views/home.html'" ng:controller="HomeCtrl"></div>
+    </div>
+  </div>
 </div>
 <div class="footer">
   <hr noshade="noshade" color="#F2F2F2" style="width: 840px;" />
