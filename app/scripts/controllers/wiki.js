@@ -1,6 +1,6 @@
 'use strict';
 
 angular.module('app')
-	.controller('WikiCtlr', function ($scope) {
+	.controller('WikiCtrl', function ($scope) {
 
 	});

@@ -215,7 +215,7 @@ module.exports = function (grunt) {
     // cssmin: {
     //   dist: {
     //     files: {
-    //       '<%= yeoman.dist %>/styles/main.css': [
+    //       '<%= yeoman.dist %>/styles/anti-bootstrap.css': [
     //         '.tmp/styles/{,*/}*.css'
     //       ]
     //     }

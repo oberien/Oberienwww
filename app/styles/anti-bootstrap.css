@@ -22,6 +22,15 @@
   margin-top: 0;
 }
 
+.navbar {
+  font-family: "Impact", "Arial Black", Gadget, sans-serif;
+  font-size: 20px;
+}
+
+ul.dropdown-menu {
+  font-size: 18px;
+}
+
 .navbar .sub-menu:before {
   border-bottom: 7px solid transparent;
   border-left: none;

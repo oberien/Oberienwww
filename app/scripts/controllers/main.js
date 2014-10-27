@@ -1,14 +1,14 @@
 'use strict';
 
 angular.module('app')
-	.controller('MainCtrl', function ($scope) {
-		$scope.inputText = "";
+	.controller('MainCtrl', function ($scope, $window) {
+    if ($window.sessionStorage.site === undefined) {
+      $window.sessionStorage.site = "home";
+    }
+    $scope.site = $window.sessionStorage.site;
 
-		$scope.buttonClicked = function() {
-			alert("Button Clicked: " + $scope.inputText);
-		};
-
-		$scope.inputChanged = function() {
-			$scope.inputText = $scope.inputText.toUpperCase();
-		};
+    $scope.changeSite = function(site) {
+      $scope.site = site;
+      $window.sessionStorage.site = $scope.site;
+    };
 	});

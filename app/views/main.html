@@ -5,10 +5,34 @@
 <div class="animate-switch-container">
   <div ng:switch on="site">
     <div class="animate-switch" ng:switch-when="home">
-        <div ng:include="'views/home.html'" ng:controller="HomeCtrl"></div>
+      <div ng:include="'views/home.html'" ng:controller="HomeCtrl"></div>
     </div>
     <div class="animate-switch" ng:switch-when="about-game">
-        <div ng:include="'views/home.html'" ng:controller="HomeCtrl"></div>
+      <div ng:include="'views/about/game.html'" ng:controller="AboutCtrl"></div>
+    </div>
+    <div class="animate-switch" ng:switch-when="about-team">
+      <div ng:include="'views/about/team.html'" ng:controller="AboutCtrl"></div>
+    </div>
+    <div class="animate-switch" ng:switch-when="gallery">
+      <div ng:include="'views/gallery.html'" ng:controller="GalleryCtrl"></div>
+    </div>
+    <div class="animate-switch" ng:switch-when="download">
+      <div ng:include="'views/download.html'" ng:controller="DownloadCtrl"></div>
+    </div>
+    <div class="animate-switch" ng:switch-when="changelog">
+      <div ng:include="'views/changelog.html'" ng:controller="ChangelogCtrl"></div>
+    </div>
+    <div class="animate-switch" ng:switch-when="wiki">
+      <div ng:include="'views/wiki/main.html'" ng:controller="WikiCtrl"></div>
+    </div>
+    <div class="animate-switch" ng:switch-when="wiki-units">
+      <div ng:include="'views/wiki/units.html'" ng:controller="WikiCtrl"></div>
+    </div>
+    <div class="animate-switch" ng:switch-when="wiki-map-tiles">
+      <div ng:include="'views/wiki/map-tiles.html'" ng:controller="WikiCtrl"></div>
+    </div>
+    <div class="animate-switch" ng:switch-when="forum">
+      <div ng:include="'views/forum/main.html'" ng:controller="ForumCtrl"></div>
     </div>
   </div>
 </div>
