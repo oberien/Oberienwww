@@ -1,0 +1,69 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h3>Getting started</h3>
+    <p>After you downloaded the game, you can doubleclick the file to open the launcher which will download the game. When this is finished, you can start the game and play against another player on you computer.</br>
+      The game is won when one base is destroyed.</p>
+    For more information, check out the <a id="link" href="wiki.html">Wiki</a>.&nbsp;&nbsp;&nbsp; <a id="link" href="http://www.oberien.wikia.com">(old wiki)</a>
+    </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Future Changes</h2>
+    <p>Here is a list of things we will impliment and bugs that we are aware of. In brackets you can see the priority (1=currently under developement)</p>
+
+    <h3>Launcher:</h3>
+    <ul><li>Show download speed. (3)</li></ul>
+
+    <h3>Menu:</h3>
+    <ul><li>Use the "Settings" button so you can change the settings. (2)</li>
+      <li>Create a game lobby where you can add, delete and change players, choose a map etc. (4)</li>
+      <li>Create a ScrollPane so you can scroll through all maps (not yet needed, but soon there will be more maps) (5)</li>
+      <li>Create pngs when maps are exported in the map editor that are shown in the mapchooser. (5)</li>
+      <li>Change the cornered buttons to round rectangles. (2) &nbsp;-<i>Anmerkung von Niki: "Rund? Dein &Ouml;rnst?"</i>-</li></ul>
+
+    <h3>Ingame:</h3>
+    <ul><li>Add a win condition. (2)</li>
+      <li>Change moving so you have a maximum amount you can walk, even after you attacked, until no movementRange is left this round. (4)</li>
+      <li>Show the full attackrange before moving in an other color than the direct attackrange. (3)</li>
+      <li>Show the movementlines while selecting the movementrounte that will be walked, so when the unit moves into the FoW its' round will be over if an enemy unit is standing in the route. (6)</li>
+      <li>Add tooltips for units and for the BuildHUD. (2)</li>
+      <li>Add a menu when pressing Esc where you are also able to change some settings. (3)</li>
+      <li>Add an option to disable each renderer. (3)</li>
+      <li>Add introduction labels in the Startpositionchooser. (2)</li>
+      <li>Make the creen black when the player chanes so enemy players can't see your units. Also set the current mapposition centered to the base of the next player when ending the turn. (3)</li></ul>
+
+    <h3>Graphics:</h3>
+    <ul><li>Compress the buffered map image so it takes less RAM. In the same step we think about changing to 100x100p tiles. At the moment it's impossible because it would take too much RAM (map of 200x200 = 14GB of RAM) (6)</li>
+      <li>Add some nice animations for the units. (6)</li></ul>
+
+    <h3>Bugs:</h3>
+    <ul>
+      <li>The game screen disappears while the map is buffered. We couldn't find the reason yet.</li>
+      <li>The sight is calculated wrong and crazy in some situations. (3)</li>
+      <li>The MouseEvents are sometimes buggy when attacking. For that bug we are also looking for the reason at the moment.</li>
+      <li>In the BuildHUD you are able to select the buttons even though there is no building unit selected. (3)</li>
+      <li>In the BuildHUD you are able to select the whole line, even though there are no pictures anymore. (3)</li>
+    </ul>
+
+    <h3>General changes:</h3>
+    <ul>
+      <li>Add an online multiplayer. (5)</li>
+      <li>Add music and sounds. (5)</li>
+      <li>Increase size of pictures on the BuildHUD. (2)</li>
+      <li>Balance the game. (all the time)</li>
+    </ul>
+  </div>
+</div>
+<div id="text2"><p style="color: #CD3700; text-align: center"><b>ONLY READ ON IF YOU ARE INTERESTED IN PROGRAMMING!!!</b></p>
+
+  <h3>Changes without an impact on playing but on programming:</h3>
+  <ul><li>Create a method "doAction(int id)" in Statemap with final ints as id (First step towards the server). (3)</li>
+    <li>Divide UnitRenderer into UnitRenderer and MovementRenderer (Also a step towards the movementLines). (3)</li>
+    <li>Swap out the Mapmovement, initiate it in GameRunning, add it to StartData and use it StartPositionChooser and GameRunning. (3)</li></ul>
+</div>
+<footer>
+  <hr noshade="noshade" color="#F2F2F2" style="width: 840px;" />
+  <div id="footer">
+    <i>&copy; by HigHt3k and aWome</i>
+  </div>
+</footer>
