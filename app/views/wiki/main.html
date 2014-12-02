@@ -1,0 +1,36 @@
+<div ng:include="'views/wiki/partial/navigation.html'"></div>
+<div class="container">
+      <div ng:switch on="site">
+        <div class="animate-switch" ng:switch-when="wiki-home">
+          <div ng:include="'views/wiki/home.html'" ng:controller="WikiHomeCtrl"></div>
+        </div>
+        <div class="animate-switch" ng:switch-when="wiki-units">
+          <div ng:include="'views/wiki/units.html'" ng:controller="UnitsCtrl"></div>
+        </div>
+        <div class="animate-switch" ng:switch-when="wiki-units-builder">
+          <div ng:include="'views/wiki/units/builder.html'" ng:controller="BuilderCtrl"></div>
+        </div>
+        <div class="animate-switch" ng:switch-when="wiki-units-infantry">
+          <div ng:include="'views/wiki/units/infantry.html'" ng:controller="InfantryCtrl"></div>
+        </div>
+        <div class="animate-switch" ng:switch-when="wiki-units-lightVehicle">
+          <div ng:include="'views/wiki/units/lightVehicle.html'" ng:controller="LightVehicleCtrl"></div>
+        </div>
+        <div class="animate-switch" ng:switch-when="wiki-units-robot">
+          <div ng:include="'views/wiki/units/robot.html'" ng:controller="RobotCtrl"></div>
+        </div>
+        <div class="animate-switch" ng:switch-when="wiki-units-spider">
+          <div ng:include="'views/wiki/units/spider.html'" ng:controller="SpiderCtrl"></div>
+        </div>
+        <div class="animate-switch" ng:switch-when="wiki-units-tank">
+          <div ng:include="'views/wiki/units/tank.html'" ng:controller="TankCtrl"></div>
+        </div>
+        <div class="animate-switch" ng:switch-when="wiki-buildings">
+          <div ng:include="'views/wiki/buildings.html'" ng:controller="BuildingsCtrl"></div>
+        </div>
+        <div class="animate-switch" ng:switch-when="wiki-map-tiles">
+          <div ng:include="'views/wiki/map-tiles.html'" ng:controller="MapTilesCtrl"></div>
+        </div>
+      </div>
+</div>
+<div ng:include="'views/partial/footer.html'"></div>

@@ -1,0 +1,36 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <img src="images/logobb.png" style="margin-right:50px"/>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li style="cursor:pointer" ng:class="{active: site=='wiki-home'}" ng:click="changeSite('wiki-home')"><a>WIKI</a></li>
+        <li style="cursor:pointer" class="dropdown" ng:class="{active: (site.indexOf('about')>-1)}">
+          <a class="dropdown-toggle" data-toggle="dropdown">UNITS<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" style="padding-left:8px;padding-right:7px">
+            <li style="cursor:pointer" ng:class="{active: site=='wiki-units-builder'}" ng:click="changeSite('wiki-units-builder')"><a>BUILDER</a></li>
+            <li style="cursor:pointer" ng:class="{active: site=='wiki-units-infantry'}" ng:click="changeSite('wiki-units-infantry')"><a>INFANTRY</a></li>
+            <li style="cursor:pointer" ng:class="{active: site=='wiki-units-lightVehicle'}" ng:click="changeSite('wiki-units-lightVehicle')"><a>LIGHT VEHICLE</a></li>
+            <li style="cursor:pointer" ng:class="{active: site=='wiki-units-robot'}" ng:click="changeSite('wiki-units-robot')"><a>ROBOT</a></li>
+            <li style="cursor:pointer" ng:class="{active: site=='wiki-units-spider'}" ng:click="changeSite('wiki-units-spider')"><a>SPIDER</a></li>
+            <li style="cursor:pointer" ng:class="{active: site=='wiki-units-tank'}" ng:click="changeSite('wiki-units-tank')"><a>TANK</a></li>
+          </ul>
+        </li>
+        <li style="cursor:pointer" class="dropdown" ng:class="{active: (site.indexOf('about')>-1)}">
+          <a class="dropdown-toggle" data-toggle="dropdown">BUILDINGS<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" style="padding-left:8px;padding-right:7px">
+            
+          </ul>
+        </li>
+        <li style="cursor:pointer" ng:class="{active: site=='wiki-map-tiles'}" ng:click="changeSite('wiki-map-tiles')"><a>MAP TILES</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li style="cursor:pointer" ng:click="home()"><a>BACK TO WEBPAGE</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

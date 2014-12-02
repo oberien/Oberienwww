@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('app')
-	.controller('MainCtrl', function ($scope, $window) {
+	.controller('MainCtrl', function ($scope, $window, $location) {
     if ($window.sessionStorage.site === undefined) {
       $window.sessionStorage.site = "home";
     }
@@ -10,5 +10,9 @@ angular.module('app')
     $scope.changeSite = function(site) {
       $scope.site = site;
       $window.sessionStorage.site = $scope.site;
+    };
+
+    $scope.wiki = function() {
+      $location.path("/wiki");
     };
 	});

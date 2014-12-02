@@ -1,3 +1,72 @@
-<div class="container-fluid">
-	<h3>News</h3>
+<div class="row">
+	<div class="col-lg-6">
+		<h3>News</h3>
+		<hr/>
+		<div class="list-group">
+			<a style="cursor:pointer" class="list-group-item inactive" ng:click="changeSite('changelog')">
+				<div class="row">
+					<div class="col-lg-11">
+						<h4 class="list-group-item-heading">0.1.0-preAlpha released (20 September 2014)</h4>
+						<p class="list-group-item-text">
+							On September 20th 2014 we released the first preAlpha version.</br>
+							This step took such a long time because we added a lot of new contents to the game.
+						</p>
+					</div>
+					<div class="col-lg-1">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</div>
+				</div>
+			</a>
+			<a style="cursor:pointer" class="list-group-item inactive" ng:click="changeSite('about-team')">
+				<div class="row">
+					<div class="col-lg-11">
+						<h4 class="list-group-item-heading">We want to introduce ourselves (13 August 2013)</h4>
+						<p class="list-group-item-text">
+							We, "BetaBears", want to introduce ourselves. As a small group of developers and designers, we first started off with the project "Oberien", our debut game.
+						</p>
+					</div>
+					<div class="col-lg-1">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</div>
+				</div>
+			</a>
+			<a style="cursor:pointer" class="list-group-item inactive" ng:click="changeSite('wiki')">
+				<div class="row">
+					<div class="col-lg-11">
+						<h4 class="list-group-item-heading">Detailed informations: The wiki (10 August 2013)</h4>
+						<p class="list-group-item-text">
+							The wiki contains a lot of detailed informations about every unit, building and also map tile available in the game. 
+						</p>
+					</div>
+					<div class="col-lg-1">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="col-lg-6">
+		<h3>Impressions</h3>
+		<hr/>
+		<div id="carousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel" data-slide-to="1"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="images/ingameImg01.png">
+				</div>
+				<div class="item">
+					<img src="images/ingameImg02.png">
+				</div>
+			</div>
+			<div class="left carousel-control" style="cursor:pointer" role="button" ng:click="prevSlide()">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</div>
+			<div class="right carousel-control" style="cursor:pointer" role="button" ng:click="nextSlide()">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</div>
+		</div>
+	</div>
 </div>
